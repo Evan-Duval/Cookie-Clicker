@@ -1,0 +1,40 @@
+header {
+    background-color: rgb(42, 37, 37);
+    color:white;
+    size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 25px;
+}
+
+nav ul a {
+    padding:15px;
+    color:white;
+    text-decoration: solid;
+    font-size: large;
+}
+
+body {
+    background-color: rgb(161, 140, 140);
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(42, 37, 37);
+    color:white;
+}
+
+#sale {
+    color:rgb(146, 0, 0);
+}
+
+#sucre {
+    color:rgb(3, 53, 134);
+}
+
+img {
+    width: 33%;
+    height: 250px;
+}
