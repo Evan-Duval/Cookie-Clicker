@@ -1,4 +1,4 @@
-function checkForm() {
+function verifierFormulaire() {
     var erreurTrouvee = false;
     var afficherTexte;
     var nomFournit = document.getElementById("nom").value;

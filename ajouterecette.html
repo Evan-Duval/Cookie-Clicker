@@ -2,19 +2,19 @@
 <html lang="fr">
 <head>
     <title>Ajouter une Recette</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Retour à l'accueil</a></li>
+                <a href="index.html">Retour à l'accueil</a>
             </ul>
         </nav>
     </header>
 
-    <form class="addrecette" onsubmit="checkForm();return false">
+    <form class="addrecette" onsubmit="verifierFormulaire();return false">
         <label for="nom">Votre nom :</label>
         <input type="text" id="nom" name="nom"> <br>
         <label for="email">Votre e-mail</label>
@@ -34,6 +34,6 @@
         </p>
     </footer>
     
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
 </body>
 </html>
