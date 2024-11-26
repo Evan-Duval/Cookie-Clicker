@@ -14,7 +14,7 @@
         </nav>
     </header>
 
-    <form class="addrecette" onsubmit="verifierFormulaire();return false">
+    <form class="addrecette">
         <label for="nom">Votre nom :</label>
         <input type="text" id="nom" name="nom"> <br>
         <label for="email">Votre e-mail</label>
@@ -23,9 +23,11 @@
         <input type="password" id="motdepasse" name="motdepasse"> <br>
         <label for="checkbox"></label>
         <input type="checkbox" id="checkbox" name="checkbox"> J'accepte les conditions d'utilisation <br>
-        <input type="submit" id="submit" name="submit">
+        <input type="submit" id="submit" name="submit" onclick="verifierFormulaire(); return false">
 
         <p id="messageRenvoyer"></p>
+
+        <button>Réinitialiser Formulaire</button>
     </form>
     
     <footer>

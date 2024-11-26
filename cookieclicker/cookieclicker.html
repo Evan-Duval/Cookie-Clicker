@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Cookie Clicker</title>
+    <title>Granola Clicker</title>
     <link rel="stylesheet" href="css/cookieclicker.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <a href="../index.html">Retour à l'accueil</a>
-            </ul>
-        </nav>
-    </header>
 
     <main>
-        <h1>Cookie Clicker le jeu :</h1>
-
-        <p>
-            Vous disposez de 0 cookies. Cliquez sur les cookies pour gagner des points et augmenter votre score.
-        </p>
-
-        <div id="stats">
-            <h3>Cookies gagnés par seconde : </h3>
-            <h3>Nombre de cookies gagnés au clic :</h3>
+        <div class="statistiques">
+            <h2>Statistiques</h2>
+            <div class="statistiques-item">
+                <p>Score : <span id="score">0</span> Granolas</p>
+            </div>
+            <div class="statistiques-item">
+                <p>Temps écoulé : <span id="elapsedTime">0 seconde</span></p>
+            </div>
+            <div class="statistiques-item">
+                <p>Granolas gagné par seconde : <span id="GranolaNumberPerSecond">0</span></p>
+            </div>
+            <div class="statistiques-item">
+                <p>Nombre de Granolas par clics : <span id="GranolaNumberPerClick">1</span></p>
+            </div>
         </div>
 
-        <div class="cookie">
-            <button>
-                <img src="cookie.jpg" alt="Cookie" id="imageCookie">
-            </button>
+        <div class="granola">
+            <h1>Granola Clicker</h1>
+            <p>Vous disposez de <span id="getCookieNumber">0</span> Granola. Cliquez sur le packet de granola pour gagner des points et augmenter votre score.</p>
+            <img id="imageCookie" src="cookie.jpg" alt="Cookie">
         </div>
 
+        <div class="upgrades">
+            <h2>Améliorations</h2>
+            <div class="upgrade-item" id="usineButton">
+                <p> <strong>Usine</strong> <br> (+1 Granola/clic) (Coute <span id="usineButtonText">20</span> Granolas)</p>
+            </div>
+            <div class="upgrade-item" id="packetdegranolaButton">
+                <strong>Packet de Granolas</strong> <br> (+5 Granola/sec) (Coute <span id="packetdegranolaButtonText"> 100 </span> Granolas)
+            </div>
+            <div class="upgrade-item" id="doubleclickButton">
+                <strong>Double Clic</strong> <br>(+100% efficacité par clic) (Coute <span id="doubleClickButtonText">5</span> Granolas)
+            </div>
+        </div>
     </main>
-
-    <footer>
-        <p>
-            &copy; 2024
-        </p>
-    </footer>
     
     <script type="text/javascript" src="js/cookieclicker.js"></script>    
 </body>
