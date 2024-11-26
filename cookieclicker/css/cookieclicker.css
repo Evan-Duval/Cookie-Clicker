@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(161, 140, 140);
+    text-align: center;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(42, 37, 37);
+    color:white;
+    position: relative;
+	width: 100%;
+}
+
+nav ul {
+    padding: 25px;
+}
+
+nav ul a {
+    padding:15px;
+    color:white;
+    text-decoration: solid;
+    font-size: large;
+}
+
+footer {
+    background-color: rgb(42, 37, 37);
+    color:white;
+    text-align: center;
+    padding: 10px;
+    font-size: small;
+}
+
+#imageCookie {
+    width: 50%;
+    height: 1%;
+}
